@@ -53,12 +53,9 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|group_name|text|null: false|
-|user_name|text|null: false|
 |name|string|null: false|
 
 ### Association
-- belongs_to :messages
 - has_many :messages
 - has_many :groups_users
 - has_many :users, through: :groups_users
@@ -68,7 +65,6 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|dody|text|null: false|
 |body|text||
 |image|string||
 |user_id|integer|null: false, foreign_key: true|
